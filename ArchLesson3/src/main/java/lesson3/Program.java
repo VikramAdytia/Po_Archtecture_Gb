@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson3;
+package lesson3;
 
 import java.awt.*;
 
@@ -50,7 +50,7 @@ public class Program {
      * «Заправочная станция». Реализовать заправку каждого
      * автомобиля подходящим топливом. Провести проверку принципа DIP.
 
-     * TODO: Домашнее задание:
+     * DONE: Домашнее задание:
      * Доработать приложение, спроектированное на семинаре. Добавить тип, описывающий "автомойку".
      * Продемонстрировать работу получившейся программы,
      * создать несколько типов автомобилей,
@@ -59,14 +59,50 @@ public class Program {
      */
     public static void main(String[] args) {
 
-        RefuelingStation refuelingStation = new RefuelingStation();
-        RefuelingStationV2 refuelingStation2 = new RefuelingStationV2();
+        Harvester harvester = new Harvester("Подметально-вакуумная машина", "ВКМ 6500", Color.ORANGE);
+        SportCar sportCar = new SportCar("Спорт-седан", "Audi S3", Color.PINK);
+        MiniVan miniVan = new MiniVan("Минивэн", "Mercedes V-Class", Color.BLACK);
+        BusinessClassCar businessClassCar = new BusinessClassCar("Автомобиль бизнес-класса", "BMW 5 Series", Color.WHITE);
+        FireEngine fireEngine = new FireEngine("Пожарная машина", "УРАЛ-4320", Color.RED);
 
-        Harvester harvester = new Harvester("A", "B", Color.BLACK);
-        harvester.setRefuelingStation(refuelingStation2);
+        RefuelingStation refuelingStationLukoil = new RefuelingStation("ЛУКОЙЛ");
+        RefuelingStation refuelingStationTatneft = new RefuelingStation("ТатНефть");
+        RefuelingStation refuelingStationGazProm = new RefuelingStation("ГазПром");
+
+        WashingStation carWashDolphin = new WashingStation("Дельфин");
+        WashingStation carWashMyDoHoles = new WashingStation("МойДоДыр");
+
+        harvester.setRefuelingStation(refuelingStationLukoil);
+        harvester.setWashingStation(carWashDolphin);
+        System.out.println(harvester.getMake() + " " + harvester.getModel() + ":   ");
         harvester.fuel();
-    }
+        harvester.wash(WashType.ExpressWash);
 
+        sportCar.setRefuelingStation(refuelingStationTatneft);
+        sportCar.setWashingStation(carWashMyDoHoles);
+        System.out.println(sportCar.getMake() + " " + sportCar.getModel() + ":   ");
+        sportCar.fuel();
+        sportCar.wash(WashType.StandardWash);
+
+        miniVan.setRefuelingStation(refuelingStationTatneft);
+        miniVan.setWashingStation(carWashDolphin);
+        System.out.println(miniVan.getMake() + " " + miniVan.getModel() + ":   ");
+        miniVan.fuel();
+        miniVan.wash(WashType.TechnicalWash);
+
+        businessClassCar.setRefuelingStation(refuelingStationGazProm);
+        businessClassCar.setWashingStation(carWashDolphin);
+        System.out.println(businessClassCar.getMake() + " " + businessClassCar.getModel() + ":   ");
+        businessClassCar.fuel();
+        businessClassCar.wash(WashType.ComplexWash);
+
+        fireEngine.setRefuelingStation(refuelingStationLukoil);
+        fireEngine.setWashingStation(carWashMyDoHoles);
+        System.out.println(fireEngine.getMake() + " " + fireEngine.getModel() + ":   ");
+        fireEngine.fuel();
+        fireEngine.wash(WashType.TechnicalWash);
+
+    }
 
     public static double calculateMaintenance(Car car){
         if (car.getWheelsCount() == 6){

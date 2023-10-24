@@ -1,32 +1,20 @@
-package ru.geekbrains.lesson3;
+package lesson3;
 
 import java.awt.*;
 
 public abstract class Car {
 
-    private Refueling refueling;
+    //region Constructors
 
-    public void setRefuelingStation(Refueling refuelingStation) {
-        this.refueling = refuelingStation;
+    public Car(String make, String model, Color color) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
     }
 
-    /**
-     * Заправить автомобиль
-     */
-    public void fuel() {
-        if (refueling != null){
-            refueling.fuel(fuelType);
-        }
-    }
+    //endregion
 
-
-    protected void setWheelsCount(int wheelsCount){
-        this.wheelsCount = wheelsCount;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
+    //region Public Methods
 
     // Движение
     public abstract void movement();
@@ -39,17 +27,31 @@ public abstract class Car {
     // Включение дворников
     public abstract boolean switchWipers();
 
-    //region Конструкторы
+    // Подметать
+    //public abstract void sweeping();
 
-    public Car(String make, String model, Color color) {
-        this.make = make;
-        this.model = model;
-        this.color = color;
+    public boolean switchFogLights(){
+        fogLights = !fogLights;
+        return fogLights;
     }
+
+    protected void setWheelsCount(int wheelsCount){
+        this.wheelsCount = wheelsCount;
+    }
+
+    public int getWheelsCount() {
+        return wheelsCount;
+    }
+
+    protected void setFuelType(FuelType fuelType){
+        this.fuelType = fuelType;
+    }
+
+
 
     //endregion
 
-    //region Поля
+    //region Private Fields
 
     // Марка автомобиля
     private String make;
@@ -67,7 +69,7 @@ public abstract class Car {
     private int wheelsCount;
 
     // Тип топлива
-    protected FuelType fuelType = FuelType.Diesel;
+    protected FuelType fuelType;
 
     // Тип коробки передач
     private GearboxType gearboxType;
@@ -77,6 +79,15 @@ public abstract class Car {
 
     // Состояние противотуманных фар
     private boolean fogLights = false;
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
 
     //endregion
 

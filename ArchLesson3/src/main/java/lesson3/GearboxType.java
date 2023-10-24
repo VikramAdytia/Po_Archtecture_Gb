@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson3;
+package lesson3;
 
 /**
  * Тип коробки передач
