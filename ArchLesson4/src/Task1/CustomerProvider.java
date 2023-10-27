@@ -1,17 +1,40 @@
 package Task1;
 
-public class CustomerProvider {
+import java.util.Collection;
 
-    private final Database database;
+public class CustomerProvider{
 
-    public CustomerProvider(Database database){
+    private Database database;
+
+    public CustomerProvider(Database database) {
         this.database = database;
     }
 
-    public Customer getCustomer(String login, String password){
-        return new Customer();
-        //return database.getCustomers().stream().findFirst().get();
+
+    //предусловие
+    public boolean checkCustomer(String login, String password){
+        Collection<Customer> customers = database.getCustomers();
+        for (Customer customer : customers) {
+            if (customer.getLogin().equals(login) && customer.getPassword().equals(password)){
+                return true;
+            }
+        }
+        return false;
     }
 
+    //Постусловия
+    public Customer getCustomer(String login, String password){
+        Customer retValue = new Customer();
+        Collection <Customer> customers = database.getCustomers();
+
+        for (Customer customer : customers) {
+            if (customer.getLogin().equals(login) && customer.getPassword().equals(password)){
+                return customer;
+            }
+        }
+        return retValue;
+    }
+
+    //инвариант
 
 }

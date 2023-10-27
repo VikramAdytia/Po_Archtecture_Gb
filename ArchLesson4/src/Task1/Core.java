@@ -1,6 +1,6 @@
 package Task1;
 
-public class Core {
+public class Core{
 
     private final CustomerProvider customerProvider;
     private final TicketProvider ticketProvider;
@@ -14,21 +14,12 @@ public class Core {
         ticketProvider = new TicketProvider(database, paymentProvider);
     }
 
-    /**
-     * Внешний сервис
-     * @return возвращает сервис по работе с билетами
-     */
     public TicketProvider getTicketProvider() {
         return ticketProvider;
     }
 
-    /**
-     * Внешний сервис
-     * @return возвращает сервис по работе с покупателями
-     */
     public CustomerProvider getCustomerProvider() {
         return customerProvider;
     }
-
 
 }

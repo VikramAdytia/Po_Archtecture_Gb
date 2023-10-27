@@ -1,9 +1,10 @@
 package Task1;
 
-public class PaymentProvider {
+public class PaymentProvider{
 
     public boolean buyTicket(int orderId, String cardNo, double amount){
-        // Посылаем запрос на формирование заявки на проведение платежа в процессинговую компанию (ProcessingCompany)
+        //TODO: Обращение к платежному шлюзу, попытка выполнить списание средств ...
         return true;
     }
+
 }

@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
-public class TicketProvider {
+public class TicketProvider{
 
     private final Database database;
     private final PaymentProvider paymentProvider;
-
 
     public TicketProvider(Database database, PaymentProvider paymentProvider){
         this.database = database;
