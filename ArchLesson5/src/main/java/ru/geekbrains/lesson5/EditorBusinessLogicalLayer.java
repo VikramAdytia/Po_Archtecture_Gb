@@ -1,17 +1,16 @@
-package ru.geekbrains.lesson5;
+package main.java.ru.geekbrains.lesson5;
 
 import java.util.Collection;
 import java.util.Random;
 
-public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
+public class EditorBusinessLogicalLayer implements BusinessLogicalLayer{
 
     private DatabaseAccess databaseAccess;
 
-    public EditorBusinessLogicalLayer(DatabaseAccess databaseAccess){
+
+    public EditorBusinessLogicalLayer(DatabaseAccess databaseAccess) {
         this.databaseAccess = databaseAccess;
     }
-
-
 
     @Override
     public Collection<Model3D> getAllModels() {
@@ -30,19 +29,20 @@ public class EditorBusinessLogicalLayer implements BusinessLogicalLayer {
 
     @Override
     public void renderAllModels() {
-        for (Model3D model: getAllModels()) {
+        for (Model3D model : getAllModels())
             processRender(model);
-        }
     }
 
     private Random random = new Random();
 
     private void processRender(Model3D model){
-        try {
+        try
+        {
             Thread.sleep(2500 - random.nextInt(2000));
         }
         catch (InterruptedException e){
             e.printStackTrace();
         }
     }
+
 }

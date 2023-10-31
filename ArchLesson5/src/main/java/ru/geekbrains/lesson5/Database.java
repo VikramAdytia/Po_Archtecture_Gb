@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson5;
+package main.java.ru.geekbrains.lesson5;
 
 import java.util.Collection;
 
@@ -11,5 +11,7 @@ public interface Database {
     void save();
 
     Collection<Entity> getAll();
+
+    void setAll(Collection<Entity> entities);
 
 }

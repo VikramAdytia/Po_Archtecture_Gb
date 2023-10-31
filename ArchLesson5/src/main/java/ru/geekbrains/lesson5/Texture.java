@@ -1,9 +1,11 @@
-package ru.geekbrains.lesson5;
+package main.java.ru.geekbrains.lesson5;
 
 public class Texture implements Entity{
 
     private static int counter = 50000;
+
     private int id;
+
     {
         id = ++counter;
     }

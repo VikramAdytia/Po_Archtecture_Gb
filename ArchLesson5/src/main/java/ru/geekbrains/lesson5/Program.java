@@ -1,8 +1,10 @@
-package ru.geekbrains.lesson5;
+package main.java.ru.geekbrains.lesson5;
 
 import java.util.Scanner;
 
 public class Program {
+
+    static Scanner scanner = new Scanner(System.in);
     /**
      * Необходимо разделить на горизонтальные уровни "Редактор 3D графики".
      * Один пользователь. Программа работает на одном компьютере без выхода в сеть.
@@ -17,7 +19,6 @@ public class Program {
      */
     public static void main(String[] args) {
         Editor3D editor3D = new Editor3D();
-        Scanner scanner = new Scanner(System.in);
         boolean f = true;
         while (f){
             System.out.println("*** МОЙ 3D РЕДАКТОР ***");
@@ -29,6 +30,8 @@ public class Program {
             System.out.println("5. Отобразить все текстуры проекта");
             System.out.println("6. Выполнить рендер всех моделей");
             System.out.println("7. Выполнить рендер модели");
+            System.out.println("8. Удалить модели");
+            System.out.println("9. Удалить текстуры");
             System.out.println("0. ЗАВЕРШЕНИЕ РАБОТЫ ПРИЛОЖЕНИЯ");
             System.out.print("Пожалуйста, выберите пункт меню: ");
             if (scanner.hasNextInt()){
@@ -69,6 +72,30 @@ public class Program {
                                 System.out.println("Номер модели указан некорректно.");
                             }
                             break;
+                        case 8:
+                            editor3D.printAllModels();
+                            System.out.print("Укажите номер модели: ");
+                            if (scanner.hasNextInt()){
+                                int modelNo = scanner.nextInt();
+                                scanner.nextLine();
+                                editor3D.removeModel(modelNo);
+                            }
+                            else {
+                                System.out.println("Номер модели указан некорректно.");
+                            }
+                            break;
+                        case 9:
+                            editor3D.printAllTextures();
+                            System.out.print("Укажите номер текстуры: ");
+                            if (scanner.hasNextInt()){
+                                int textureNo = scanner.nextInt();
+                                scanner.nextLine();
+                                editor3D.removeTexture(textureNo);
+                            }
+                            else {
+                                System.out.println("Номер \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u044B указан некорректно.");
+                            }
+                            break;
                         default:
                             System.out.println("Укажите корректный пункт меню.");
                     }
@@ -83,5 +110,4 @@ public class Program {
             }
         }
     }
-
 }

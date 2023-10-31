@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson5;
+package main.java.ru.geekbrains.lesson5;
 
 /**
  * Сущность
