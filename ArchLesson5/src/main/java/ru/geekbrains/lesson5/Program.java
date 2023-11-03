@@ -39,65 +39,53 @@ public class Program {
                 scanner.nextLine();
                 try {
                     switch (no) {
-                        case 0:
+                        case 0 -> {
                             System.out.println("Завершение работы приложения");
                             f = false;
-                            break;
-                        case 1:
+                        }
+                        case 1 -> {
                             System.out.print("Укажите наименование файла проекта: ");
                             String fileName = scanner.nextLine();
                             editor3D.openProject(fileName);
                             System.out.println("Проект успешно открыт.");
-                            break;
-                        case 3:
-                            editor3D.showProjectSettings();
-                            break;
-                        case 4:
-                            editor3D.printAllModels();
-                            break;
-                        case 5:
-                            editor3D.printAllTextures();
-                            break;
-                        case 6:
-                            editor3D.renderAll();
-                            break;
-                        case 7:
+                        }
+                        case 3 -> editor3D.showProjectSettings();
+                        case 4 -> editor3D.printAllModels();
+                        case 5 -> editor3D.printAllTextures();
+                        case 6 -> editor3D.renderAll();
+                        case 7 -> {
                             System.out.print("Укажите номер модели: ");
-                            if (scanner.hasNextInt()){
+                            if (scanner.hasNextInt()) {
                                 int modelNo = scanner.nextInt();
                                 scanner.nextLine();
                                 editor3D.renderModel(modelNo);
-                            }
-                            else {
+                            } else {
                                 System.out.println("Номер модели указан некорректно.");
                             }
-                            break;
-                        case 8:
+                        }
+                        case 8 -> {
                             editor3D.printAllModels();
                             System.out.print("Укажите номер модели: ");
-                            if (scanner.hasNextInt()){
+                            if (scanner.hasNextInt()) {
                                 int modelNo = scanner.nextInt();
                                 scanner.nextLine();
                                 editor3D.removeModel(modelNo);
-                            }
-                            else {
+                            } else {
                                 System.out.println("Номер модели указан некорректно.");
                             }
-                            break;
-                        case 9:
+                        }
+                        case 9 -> {
                             editor3D.printAllTextures();
                             System.out.print("Укажите номер текстуры: ");
-                            if (scanner.hasNextInt()){
+                            if (scanner.hasNextInt()) {
                                 int textureNo = scanner.nextInt();
                                 scanner.nextLine();
                                 editor3D.removeTexture(textureNo);
-                            }
-                            else {
+                            } else {
                                 System.out.println("Номер \u0442\u0435\u043A\u0441\u0442\u0443\u0440\u044B указан некорректно.");
                             }
-                            break;
-                        default:
-                            System.out.println("Укажите корректный пункт меню.");
+                        }
+                        default -> System.out.println("Укажите корректный пункт меню.");
                     }
                 }
                 catch (Exception e){
