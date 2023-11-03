@@ -4,10 +4,11 @@ import ru.geekbrains.lesson6.infrastructure.persistance.Database;
 
 public class NotesDatabase implements Database {
 
-    private NotesTable notesTable = new NotesTable();
-
+    private NotesTable notesTable;
 
     public NotesTable getNotesTable() {
+        if (notesTable == null)
+            notesTable = new NotesTable();
         return notesTable;
     }
 }

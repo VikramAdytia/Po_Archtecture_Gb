@@ -6,18 +6,18 @@ import ru.geekbrains.lesson6.application.interfaces.NotesPresenter;
 import ru.geekbrains.lesson6.domain.Note;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.Optional;
 
 public class ConcreteNoteEditor implements NoteEditor {
 
     private final NotesDatabaseContext dbContext;
-    private final NotesPresenter presenter;
+    private final NotesPresenter notesPresenter;
 
-    public ConcreteNoteEditor(
-            NotesPresenter presenter,
-            NotesDatabaseContext dbContext) {
+    public ConcreteNoteEditor(NotesDatabaseContext dbContext,
+                              NotesPresenter notesPresenter) {
         this.dbContext = dbContext;
-        this.presenter = presenter;
+        this.notesPresenter = notesPresenter;
     }
 
     @Override
@@ -28,7 +28,15 @@ public class ConcreteNoteEditor implements NoteEditor {
 
     @Override
     public boolean edit(Note item) {
-        return false;
+        if (item == null)
+            return false;
+        Optional<Note> note = getById(item.getId());
+        if (note.isEmpty())
+            return false;
+        note.get().setTitle(item.getTitle());
+        note.get().setDetails(item.getDetails());
+        note.get().setEditDate(new Date());
+        return dbContext.saveChanges();
     }
 
     @Override
@@ -38,8 +46,8 @@ public class ConcreteNoteEditor implements NoteEditor {
     }
 
     @Override
-    public Optional<Note> getById(Integer integer) {
-        return Optional.empty();
+    public Optional<Note> getById(Integer id) {
+        return dbContext.getAll().stream().filter(p -> p.getId() == id).findFirst();
     }
 
     @Override
@@ -49,6 +57,6 @@ public class ConcreteNoteEditor implements NoteEditor {
 
     @Override
     public void printAll() {
-        presenter.printAll(getAll());
+        notesPresenter.printAll(getAll());
     }
 }

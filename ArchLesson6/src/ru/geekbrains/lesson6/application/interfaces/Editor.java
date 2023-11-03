@@ -14,5 +14,4 @@ public interface Editor<T, TId> {
     Optional<T> getById(TId id);
 
     Collection<T> getAll();
-
 }

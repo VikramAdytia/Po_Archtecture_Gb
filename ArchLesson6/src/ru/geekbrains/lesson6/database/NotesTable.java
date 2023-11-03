@@ -6,22 +6,21 @@ import java.util.Random;
 
 public class NotesTable {
 
-    private static Random random = new Random();
+    private Random random = new Random();
 
     private Collection<NotesRecord> records;
 
     public Collection<NotesRecord> getRecords() {
-        prepareRecords();
+        if (records == null)
+        {
+            records = new ArrayList<>();
+            int recordsCount =  5  + random.nextInt(10);
+            for (int i = 0; i < recordsCount; i++){
+                records.add(new NotesRecord("title #" + i, "details #" + i));
+            }
+        }
         return records;
     }
 
-    private void prepareRecords(){
-        if (records == null){
-            records = new ArrayList<>();
-            int recordCount = random.nextInt(5, 11);
-            for (int i = 0; i < recordCount; i++){
-                records.add(new NotesRecord("title #" + (i + 1), "details #" + (i + 1)));
-            }
-        }
-    }
+
 }
