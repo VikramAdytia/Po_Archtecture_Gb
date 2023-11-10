@@ -1,11 +1,14 @@
 package ru.geekbrains.lesson8.Presenters;
 
 import ru.geekbrains.lesson8.Models.TableModel;
+import ru.geekbrains.lesson8.Models.Table;
 import ru.geekbrains.lesson8.Views.BookingView;
 
+import java.util.Collection;
 import java.util.Date;
 
 public class BookingPresenter implements ViewObserver {
+
 
     private final Model model;
     private final View view;
@@ -13,24 +16,53 @@ public class BookingPresenter implements ViewObserver {
     public BookingPresenter(Model model, View view) {
         this.model = model;
         this.view = view;
-        this.view.registerObserver(this);
-    }
-    public void updateTables(){
-        view.showTables(model.loadTables());
+        this.view.setObserver(this);
     }
 
-    private void showReservationTableResult(int reservationNo){
+    /**
+     * Получение списка всех столиков
+     */
+    public Collection<Table> loadTables(){
+        return model.loadTables();
+    }
+
+    /**
+     * Отобразить список столиков (на представлении)
+     */
+    public void updateUIShowTables(){
+        view.showTables(loadTables());
+    }
+
+    public void updateUIShowReservationTableResult(int reservationNo){
         view.showReservationTableResult(reservationNo);
     }
 
+    /**
+     * Произошло событие, пользователь нажал на кнопку резерва столика
+     * @param orderDate дата резерва
+     * @param tableNo номер столика
+     * @param name имя клиента
+     */
     @Override
-    public void onReservationTable(Date reservtionDate, int tableNo, String name) {
+    public void onReservationTable(Date orderDate, int tableNo, String name) {
         try {
-            int reservationNo = model.reservationTable(reservtionDate, tableNo, name);
-            showReservationTableResult(reservationNo);
+            int reservationNo = model.reservationTable(orderDate, tableNo, name);
+            updateUIShowReservationTableResult(reservationNo);
+
         }
         catch (RuntimeException e){
-            showReservationTableResult(-1);
+            updateUIShowReservationTableResult(-1);
+        }
+    }
+
+    @Override
+    public void onChangeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name) {
+        try {
+            int reservationNo = model.changeReservationTable(oldReservation, reservationDate, tableNo, name);
+            updateUIShowReservationTableResult(reservationNo);
+        }
+        catch (RuntimeException e){
+            updateUIShowReservationTableResult(-1);
         }
     }
 }

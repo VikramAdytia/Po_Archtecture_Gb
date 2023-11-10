@@ -1,38 +1,34 @@
 package ru.geekbrains.lesson8.Models;
 
 import java.util.Date;
+import java.util.Locale;
 
 public class Reservation {
 
-    public Reservation(int tableNo, Date date, String name) {
-        this.tableNo = tableNo;
-        this.date = date;
-        this.name = name;
+    public int getId() {
+        return id;
     }
 
     private static int counter = 1000;
     private final int id;
 
-    private final int tableNo;
+    private Table table;
+
+    private Date date;
+    private String name;
 
     {
         id = ++counter;
     }
-    private Date date;
 
-    private String name;
-
-    public Date getDate() {
-        return date;
+    public Reservation(Table table, Date date, String name) {
+        this.table = table;
+        this.date = date;
+        this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
-
-
-
-    public int getId() {
-        return id;
+    @Override
+    public String toString() {
+        return String.format(Locale.getDefault(), "резерв #%d, дата: %s, клиент: %s", id, date.toString(), name);
     }
 }

@@ -2,8 +2,19 @@ package ru.geekbrains.lesson8.Models;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Locale;
 
 public class Table {
+
+    public int getNo() {
+        return no;
+    }
+
+    public Collection<Reservation> getReservations() {
+        return reservations;
+    }
+
+    private final Collection<Reservation> reservations = new ArrayList<>();
 
     private static int counter;
     private final int no;
@@ -12,18 +23,13 @@ public class Table {
         no = ++counter;
     }
 
-    private final Collection<Reservation> reservations = new ArrayList<>();
-
-    public Collection<Reservation> getReservations() {
-        return reservations;
-    }
-
-    public int getNo() {
-        return no;
-    }
-
     @Override
     public String toString() {
-        return String.format("Столик #%d", no);
+        StringBuilder builder = new StringBuilder();
+        builder.append(String.format(Locale.getDefault(), "Столик: #%d \n", no));
+        for (Reservation reservation : reservations) {
+            builder.append(String.format(Locale.getDefault(), " Резерв: #%s \n", reservation.toString()));
+        }
+        return builder.toString();
     }
 }
