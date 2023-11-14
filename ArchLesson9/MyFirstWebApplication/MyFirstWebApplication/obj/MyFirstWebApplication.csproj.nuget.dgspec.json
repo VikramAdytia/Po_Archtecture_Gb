@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sources\\gb\\arc\\group1\\lesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj": {}
+    "F:\\java\\Staging\\Po_Archtecture_Gb\\ArchLesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj": {}
   },
   "projects": {
-    "C:\\sources\\gb\\arc\\group1\\lesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj": {
+    "F:\\java\\Staging\\Po_Archtecture_Gb\\ArchLesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sources\\gb\\arc\\group1\\lesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj",
+        "projectUniqueName": "F:\\java\\Staging\\Po_Archtecture_Gb\\ArchLesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj",
         "projectName": "MyFirstWebApplication",
-        "projectPath": "C:\\sources\\gb\\arc\\group1\\lesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj",
+        "projectPath": "F:\\java\\Staging\\Po_Archtecture_Gb\\ArchLesson9\\MyFirstWebApplication\\MyFirstWebApplication\\MyFirstWebApplication.csproj",
         "packagesPath": "C:\\Users\\EvilDracur\\.nuget\\packages\\",
         "outputPath": "C:\\sources\\gb\\arc\\group1\\lesson9\\MyFirstWebApplication\\MyFirstWebApplication\\obj\\",
         "projectStyle": "PackageReference",

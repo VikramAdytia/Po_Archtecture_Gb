@@ -1,84 +1,88 @@
-﻿namespace MyFirstWebApplication.Models
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace MyFirstWebApplication.Models
 {
     /// <summary>
     /// Объект на базе класса WeatherForecastHolder будет хранить список показателей по температуре
     /// </summary>
     public class WeatherForecastHolder
-    {
-        //private static WeatherForecastHolder _instance;
-
-        //public static WeatherForecastHolder Instance()
-        //{
-        //    if (_instance == null)
-        //        _instance = new WeatherForecastHolder();
-        //    return _instance;
-        //}
-
-        // Коллекция для хранения показателей по температуре
-        private List<WeatherForecast> _values;
-
-
-        public WeatherForecastHolder()
         {
-            _values = new List<WeatherForecast>();
-        }
+            // Коллекция для хранения показателей температуры
+            private List<WeatherForecast> _values;
 
-        /// <summary>
-        /// Добавить новый показатель по температуре
-        /// </summary>
-        /// <param name="date"></param>
-        /// <param name="temperatureC"></param>
-        public bool Add(DateTime date, int temperatureC)
-        {
-            WeatherForecast forecast = new WeatherForecast();
-            forecast.TemperatureC = temperatureC;
-            forecast.Date = date;
-            _values.Add(forecast);
-            return true;
-        }
-
-        /// <summary>
-        /// Обновить показатель по температуре
-        /// </summary>
-        /// <param name="date"></param>
-        /// <param name="temperatureC"></param>
-        /// <returns></returns>
-        public bool Update(DateTime date, int temperatureC)
-        {
-            foreach (WeatherForecast forecast in _values)
+            public WeatherForecastHolder()
             {
-                if (forecast.Date == date)
+                // Инициализирую коллекцию для хранения показателей температуры
+                _values = new List<WeatherForecast>();
+            }
+
+            /// <summary>
+            /// Добавить новый показатель температуры
+            /// </summary>
+            /// <param name="dateTime">Дата фиксации показателя температуры</param>
+            /// <param name="temperatureC">Показатель температуры</param>
+            public void Add(DateTime dateTime, int temperatureC)
+            {
+                WeatherForecast forecast = new WeatherForecast();
+                forecast.TemperatureC = temperatureC;
+                forecast.Date = dateTime;
+
+                _values.Add(forecast);
+            }
+
+            /// <summary>
+            /// Обновить показатель температуры
+            /// </summary>
+            /// <param name="date">Дата фиксации показания температуры</param>
+            /// <param name="temperatureC">Новый показатель температуры</param>
+            /// <returns>Результат выполнения операции</returns>
+            public bool Update(DateTime date, int temperatureC)
+            {
+                foreach (WeatherForecast item in _values)
                 {
-                    forecast.TemperatureC = temperatureC;
+                    if (item.Date == date)
+                    {
+                        item.TemperatureC = temperatureC;
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            /// <summary>
+            /// Получить показатели температуры за временной период
+            /// </summary>
+            /// <param name="dateFrom">Начальная дата</param>
+            /// <param name="dateTo">Конечная дата</param>
+            /// <returns>Коллекция показателей температуры</returns>
+            public List<WeatherForecast> Get(DateTime dateFrom, DateTime dateTo)
+            {
+                List<WeatherForecast> list = new List<WeatherForecast>();
+                foreach (WeatherForecast item in _values)
+                {
+                    if (item.Date >= dateFrom && item.Date <= dateTo)
+                        list.Add(item);
+                }
+                return list;
+            }
+
+            /// <summary>
+            /// Удалить показатель температуты на дату
+            /// </summary>
+            /// <param name="date">Дата фиксации показателя температуры</param>
+            /// <returns>Результат выполнения операции</returns>
+            public bool Delete(DateTime date)
+            {
+                List<WeatherForecast> tempList = new List<WeatherForecast>();
+                tempList = Get(date, date);
+                if (tempList.Count() > 0){
+                    foreach (WeatherForecast _value in tempList) {
+                        _values.Remove(_value);
+                    }
                     return true;
+                } else {
+                    return false;
                 }
             }
-            return false;
         }
-
-        //public bool Delete()
-        //{
-
-        //}
-
-        /// <summary>
-        /// Получить показатели по температуре за период
-        /// </summary>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <returns></returns>
-        public List<WeatherForecast> Get(DateTime from, DateTime to)
-        {
-            List<WeatherForecast> resultList = new List<WeatherForecast>();
-            foreach (WeatherForecast forecast in _values)
-            {
-                if (forecast.Date >= from && forecast.Date <= to)
-                {
-                    resultList.Add(forecast);
-                }
-            }
-            return resultList;
-        }
-
     }
-}

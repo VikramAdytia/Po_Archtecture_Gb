@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using MyFirstWebApplication.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MyFirstWebApplication.Controllers
 {
@@ -17,33 +17,32 @@ namespace MyFirstWebApplication.Controllers
             _weatherForecastHolder = weatherForecastHolder;
         }
 
-
         [HttpPost("add-data")]
-        public ActionResult<bool> Add([FromQuery] DateTime date, [FromQuery] int temperatureC)
+        public IActionResult Add([FromQuery]  DateTime date, [FromQuery] int temperatureC)
         {
-            bool result = _weatherForecastHolder.Add(date, temperatureC);
-            return Ok(result);
+            _weatherForecastHolder.Add(date, temperatureC);
+            return Ok();
         }
 
         [HttpPut("update-data")]
-        public ActionResult<bool> Update([FromQuery] DateTime date, [FromQuery] int temperatureC)
+        public IActionResult Update([FromQuery] DateTime date, [FromQuery] int temperatureC)
         {
-            bool result = _weatherForecastHolder.Update(date, temperatureC);
-            return Ok(result);
-
+            _weatherForecastHolder.Update(date, temperatureC);
+            return Ok();
         }
 
         [HttpDelete("delete-data")]
         public IActionResult Delete([FromQuery] DateTime date)
         {
+            _weatherForecastHolder.Delete(date);
             return Ok();
         }
 
         [HttpGet("get-data")]
-        public ActionResult<List<WeatherForecast>> Get([FromQuery] DateTime from, [FromQuery] DateTime to)
+        public IActionResult Get([FromQuery] DateTime dateFrom, [FromQuery] DateTime dateTo)
         {
-            List<WeatherForecast> result = _weatherForecastHolder.Get(from, to);
-            return Ok(result);
+            List<WeatherForecast> list = _weatherForecastHolder.Get(dateFrom, dateTo);
+            return Ok(list);
         }
 
     }
