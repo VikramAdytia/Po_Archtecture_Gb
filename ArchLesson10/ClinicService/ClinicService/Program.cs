@@ -2,31 +2,30 @@
 using ClinicService.Services;
 using ClinicService.Services.Impl;
 using Microsoft.Data.Sqlite;
-using System.Diagnostics;
 
 namespace ClinicService
 {
     public class Program
     {
-        /// <summary>
-        /// https://sqlitestudio.pl/
-        /// </summary>
-        /// <param name="args"></param>
+        // https://sqlitestudio.pl/
         public static void Main(string[] args)
         {
+
             //ConfigureSqlLiteConnection();
-            
 
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IClientRepository, ClientRepository>();
+            builder.Services.AddScoped<IPetRepository, PetRepository>();
+            builder.Services.AddScoped<IConsultationRepository, ConsultationRepository>();
 
             builder.Services.AddControllers();
-            builder.Services.AddScoped<IClientRepository, ClientRepository>();
-
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(configure => {
+                configure.EnableAnnotations();
+            });
 
             var app = builder.Build();
 
@@ -47,18 +46,15 @@ namespace ClinicService
 
         private static void ConfigureSqlLiteConnection()
         {
-            string connectionString = "Data Source = clinic.db;";
-            SqliteConnection sqliteConnection = new SqliteConnection(connectionString);
-            sqliteConnection.Open();
-            PrepareSchema(sqliteConnection);
-            sqliteConnection.Close();
+            const string connectionString = "Data Source = clinic.db;";
+            SqliteConnection connection = new SqliteConnection(connectionString);
+            connection.Open();
+            PrepareSchema(connection);
         }
 
-        private static void PrepareSchema(SqliteConnection sqliteConnection)
+        private static void PrepareSchema(SqliteConnection connection)
         {
-            SqliteCommand sqliteCommand = new SqliteCommand();
-            sqliteCommand.Connection = sqliteConnection;
-
+            SqliteCommand sqliteCommand = connection.CreateCommand();
             sqliteCommand.CommandText = "DROP TABLE IF EXISTS consultations";
             sqliteCommand.ExecuteNonQuery();
             sqliteCommand.CommandText = "DROP TABLE IF EXISTS pets";
@@ -75,7 +71,7 @@ namespace ClinicService
                     Birthday INTEGER)";
             sqliteCommand.ExecuteNonQuery();
             sqliteCommand.CommandText =
-                    @"CREATE TABLE Pets(PetId INTEGER PRIMARY KEY,
+                @"CREATE TABLE Pets(PetId INTEGER PRIMARY KEY,
                     ClientId INTEGER,
                     Name TEXT,
                     Birthday INTEGER)";
@@ -87,7 +83,6 @@ namespace ClinicService
                     ConsultationDate INTEGER,
                     Description TEXT)";
             sqliteCommand.ExecuteNonQuery();
-            sqliteCommand.Dispose();
         }
 
     }
