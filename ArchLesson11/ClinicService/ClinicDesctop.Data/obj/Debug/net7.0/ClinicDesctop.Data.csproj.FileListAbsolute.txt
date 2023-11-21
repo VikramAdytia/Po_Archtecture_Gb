@@ -46,3 +46,15 @@ F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop.Data\ob
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\refint\ClinicDesctop.Data.dll
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.pdb
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ref\ClinicDesctop.Data.dll
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\bin\Debug\net7.0\ClinicDesctop.Data.deps.json
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\bin\Debug\net7.0\ClinicDesctop.Data.dll
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\bin\Debug\net7.0\ClinicDesctop.Data.pdb
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.AssemblyInfo.cs
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.dll
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\refint\ClinicDesctop.Data.dll
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ClinicDesctop.Data.pdb
+C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop.Data\obj\Debug\net7.0\ref\ClinicDesctop.Data.dll

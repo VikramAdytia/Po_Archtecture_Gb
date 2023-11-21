@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj": {
+    "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj",
         "projectName": "ClinicDesctop.Data",
-        "projectPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj": {
+    "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
         "projectName": "ClinicDesctop",
-        "projectPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,8 +101,8 @@
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
             "projectReferences": {
-              "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj": {
-                "projectPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj"
+              "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj": {
+                "projectPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0hj24RUY0igF67liOerLbFNm6+fxkea6WeUr2gYRsWRFGOgzQ/u5TAIU/BlvUjXAW/XZ2ufD9hNajvgU77xWvQ==",
+  "dgSpecHash": "7SnSL1j+/x5hs4Xpvk15i2+eghHA+582XFmum3l9Dm+/OopARYQYV6Y58PDmGTmqkUTSJ4tR1dYaoEdkDsB8Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
+  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite\\7.0.11\\microsoft.data.sqlite.7.0.11.nupkg.sha512",
