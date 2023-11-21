@@ -26,7 +26,7 @@ namespace ClinicService.Services.Impl
                 command.Prepare();
                 // Выполнение команды
                 return command.ExecuteNonQuery();
-            }
+            } 
         }
 
         public int Update(Client item)
@@ -126,6 +126,6 @@ namespace ClinicService.Services.Impl
             return null;
         }
 
-
+        
     }
 }
