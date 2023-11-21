@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ArchLesson11",
+    "\\ArchLesson11\\ClinicService",
+    "\\ArchLesson11\\ClinicService\\ClinicConsole",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\bin",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\bin\\Release",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\bin\\Release\\net7.0-windows",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj\\Release",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj\\Release\\net7.0-windows",
+    "\\ArchLesson11\\ClinicService\\ClinicDesctop\\obj\\Release\\net7.0-windows\\ref"
+  ],
+  "SelectedNode": "\\ArchLesson11\\ClinicService\\ClinicConsole\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

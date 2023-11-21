@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "s9V1RIeIEa1wyyaRhLPZgmhL5/n6d7fHFayVNP4CoIe2Mx0kiK0dWXB5vcl0kobgmhmWqEo9rXU42ld8YbsQfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicConsole\\ClinicConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.client\\8.0.0\\microsoft.extensions.apidescription.client.8.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\nswag.apidescription.client\\13.20.0\\nswag.apidescription.client.13.20.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\nswag.msbuild\\13.20.0\\nswag.msbuild.13.20.0.nupkg.sha512"
+  ],
+  "logs": []
+}
