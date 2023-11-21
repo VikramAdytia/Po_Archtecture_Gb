@@ -82,7 +82,3 @@ F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop\obj\Deb
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ClinicDesctop.pdb
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ClinicDesctop.genruntimeconfig.cache
 F:\java\colnes\program_architect\hometask_11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ref\ClinicDesctop.dll
-C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ClinicDesctop.csproj.AssemblyReference.cache
-C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ClinicDesctop.dll
-C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\refint\ClinicDesctop.dll
-C:\Users\USER\source\repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicDesctop\obj\Debug\net7.0-windows\ClinicDesctop.pdb

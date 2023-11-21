@@ -44,7 +44,7 @@ namespace ClinicService.Controllers
                 ClientId = updateRequest.ClientId,
                 PetId = updateRequest.PetId,
                 ConsultationDate = updateRequest.ConsultationDate,
-                Description = updateRequest.Description
+                Description= updateRequest.Description
             });
             return Ok(res);
         }

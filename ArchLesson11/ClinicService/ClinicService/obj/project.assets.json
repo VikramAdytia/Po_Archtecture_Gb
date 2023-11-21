@@ -839,11 +839,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
+      "projectUniqueName": "F:\\java\\colnes\\program_architect\\hometask_11\\ClinicService\\ClinicService\\ClinicService.csproj",
       "projectName": "ClinicService",
-      "projectPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
+      "projectPath": "F:\\java\\colnes\\program_architect\\hometask_11\\ClinicService\\ClinicService\\ClinicService.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\obj\\",
+      "outputPath": "F:\\java\\colnes\\program_architect\\hometask_11\\ClinicService\\ClinicService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,7 +6,6 @@
 
         public int ClientId { get; set; }
 
-
         public int PetId { get; set; }
 
         public DateTime ConsultationDate { get; set; }
