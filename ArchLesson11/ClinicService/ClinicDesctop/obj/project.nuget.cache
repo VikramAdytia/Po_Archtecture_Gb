@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pRju8F4yK3Y/YzIVG4Ld9RC1vJ2vFUrt8KiU9e0U1bn0KhBrGy5741HYVxmPzTbZZ8tcU4e6tDnppVenioavUg==",
+  "dgSpecHash": "Sifllk4W+YBTBjY7ePf4vuH0bYF7yA+fI+ev2+xqVWQ2MSBDbphrw9REsr7nJeuNRlMbt2YX1Co6uykVJzcf4w==",
   "success": true,
-  "projectFilePath": "C:\\sources\\gb\\arch\\group2\\lesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop\\ClinicDesctop.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\EvilDracur\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\USER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
