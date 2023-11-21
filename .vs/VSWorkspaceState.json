@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ArchLesson10",
+    "\\ArchLesson10\\ClinicService",
+    "\\ArchLesson10\\ClinicService\\ClinicService",
+    "\\ArchLesson10\\ClinicService\\ClinicService\\Models\\Requests",
+    "\\ArchLesson10\\ClinicService\\ClinicService\\Properties",
+    "\\ArchLesson10\\ClinicService\\ClinicService\\Services\\Impl"
   ],
-  "SelectedNode": "\\C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb",
+  "SelectedNode": "\\ArchLesson10\\ClinicService\\ClinicService\\Properties\\launchSettings.json",
   "PreviewInSolutionExplorer": false
 }
