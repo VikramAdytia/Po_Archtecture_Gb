@@ -15,17 +15,17 @@
           }
         }
       },
-      "ClinicService.Data/1.0.0": {
+      "ClinicDesctop.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/ClinicService.Data.dll": {}
+          "bin/placeholder/ClinicDesctop.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClinicService.Data.dll": {}
+          "bin/placeholder/ClinicDesctop.Data.dll": {}
         }
       }
     }
@@ -61,15 +61,15 @@
         "packageIcon.png"
       ]
     },
-    "ClinicService.Data/1.0.0": {
+    "ClinicDesctop.Data/1.0.0": {
       "type": "project",
-      "path": "../ClinicService.Data/ClinicService.Data.csproj",
-      "msbuildProject": "../ClinicService.Data/ClinicService.Data.csproj"
+      "path": "../ClinicDesctop.Data/ClinicDesctop.Data.csproj",
+      "msbuildProject": "../ClinicDesctop.Data/ClinicDesctop.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "ClinicService.Data >= 1.0.0"
+      "ClinicDesctop.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -99,8 +99,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService.Data\\ClinicService.Data.csproj": {
-              "projectPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService.Data\\ClinicService.Data.csproj"
+            "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj": {
+              "projectPath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicDesctop.Data\\ClinicDesctop.Data.csproj"
             }
           }
         }

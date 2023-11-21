@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ttvk9YRV7NwAi+z/rAta13O+xZuBEquAmsnT4XqWFAWn+KFBzyNxw0LzLJ/PHDYG35e2SkQb9rsRKSowbGomQg==",
+  "dgSpecHash": "0hj24RUY0igF67liOerLbFNm6+fxkea6WeUr2gYRsWRFGOgzQ/u5TAIU/BlvUjXAW/XZ2ufD9hNajvgU77xWvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\USER\\Source\\Repos\\Po_Archtecture_Gb\\ArchLesson11\\ClinicService\\ClinicService\\ClinicService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite\\7.0.13\\microsoft.data.sqlite.7.0.13.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.13\\microsoft.data.sqlite.core.7.0.13.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite\\7.0.11\\microsoft.data.sqlite.7.0.11.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.11\\microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
@@ -14,6 +14,7 @@
     "C:\\Users\\USER\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.4\\sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",

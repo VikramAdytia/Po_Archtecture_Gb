@@ -2,7 +2,5 @@
 
 namespace ClinicService.Services
 {
-    public interface IConsultationRepository : IRepository<Consultation, int>
-    {
-    }
+    public interface IConsultationRepository : IRepository<Consultation, int> { }
 }

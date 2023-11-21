@@ -2,16 +2,12 @@
 using ClinicService.Services;
 using ClinicService.Services.Impl;
 using Microsoft.Data.Sqlite;
-using System.Diagnostics;
 
 namespace ClinicService
 {
     public class Program
     {
-        /// <summary>
-        /// https://sqlitestudio.pl/
-        /// </summary>
-        /// <param name="args"></param>
+        // https://sqlitestudio.pl/
         public static void Main(string[] args)
         {
 

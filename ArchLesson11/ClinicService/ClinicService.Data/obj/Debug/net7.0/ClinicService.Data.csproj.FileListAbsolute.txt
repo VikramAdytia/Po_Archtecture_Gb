@@ -10,3 +10,15 @@ C:\sources\gb\arch\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\ne
 C:\sources\gb\arch\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\refint\ClinicService.Data.dll
 C:\sources\gb\arch\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.pdb
 C:\sources\gb\arch\group2\lesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ref\ClinicService.Data.dll
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.deps.json
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.dll
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\bin\Debug\net7.0\ClinicService.Data.pdb
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.csproj.AssemblyReference.cache
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.AssemblyInfoInputs.cache
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.AssemblyInfo.cs
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.dll
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\refint\ClinicService.Data.dll
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ClinicService.Data.pdb
+C:\Users\USER\Source\Repos\Po_Archtecture_Gb\ArchLesson11\ClinicService\ClinicService.Data\obj\Debug\net7.0\ref\ClinicService.Data.dll

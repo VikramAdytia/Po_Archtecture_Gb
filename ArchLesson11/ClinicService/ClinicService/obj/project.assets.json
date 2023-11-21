@@ -21,10 +21,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.Data.Sqlite/7.0.13": {
+      "Microsoft.Data.Sqlite/7.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "7.0.13",
+          "Microsoft.Data.Sqlite.Core": "7.0.11",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.4"
         },
         "compile": {
@@ -34,7 +34,7 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.Data.Sqlite.Core/7.0.13": {
+      "Microsoft.Data.Sqlite.Core/7.0.11": {
         "type": "package",
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.4"
@@ -229,6 +229,22 @@
           "build/Swashbuckle.AspNetCore.props": {}
         }
       },
+      "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0"
+        },
+        "compile": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Swashbuckle.AspNetCore.Annotations.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -307,23 +323,23 @@
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
-    "Microsoft.Data.Sqlite/7.0.13": {
-      "sha512": "zBd0ZxGNsgQ03hDT+4LwCopVwSO1yLvUEI5oSkkLK5B3JeWSpiaEALQojNycA2K4zuYBJNL3uPy2J262DoKdRA==",
+    "Microsoft.Data.Sqlite/7.0.11": {
+      "sha512": "nPcjkvaq0P0Hg2esYdJKswiMv7rq7Lp/hycPBau1GK6J6u2qMRIWmZ72+YzUbO5VhiUdKrLNS92foi8bly7OCA==",
       "type": "package",
-      "path": "microsoft.data.sqlite/7.0.13",
+      "path": "microsoft.data.sqlite/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.0/_._",
-        "microsoft.data.sqlite.7.0.13.nupkg.sha512",
+        "microsoft.data.sqlite.7.0.11.nupkg.sha512",
         "microsoft.data.sqlite.nuspec"
       ]
     },
-    "Microsoft.Data.Sqlite.Core/7.0.13": {
-      "sha512": "acRUY0iRrdIrhUXxu9GnonxV9P3VIeMnpnmHoY9vE9D5CAJeThro7vr63urSD0Qmav2gS2sxNAQ/NkP09OZJBQ==",
+    "Microsoft.Data.Sqlite.Core/7.0.11": {
+      "sha512": "s7YzfqaP0lsfT2eUEYBHR+bP51fPIv1Xt02eh36/8be5MAYj/UaN8rX+GM5jc3dUqwZSxAsxkaU6ZlllqYtBhQ==",
       "type": "package",
-      "path": "microsoft.data.sqlite.core/7.0.13",
+      "path": "microsoft.data.sqlite.core/7.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -332,7 +348,7 @@
         "lib/net6.0/Microsoft.Data.Sqlite.xml",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.dll",
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
-        "microsoft.data.sqlite.core.7.0.13.nupkg.sha512",
+        "microsoft.data.sqlite.core.7.0.11.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
       ]
     },
@@ -683,6 +699,32 @@
         "swashbuckle.aspnetcore.nuspec"
       ]
     },
+    "Swashbuckle.AspNetCore.Annotations/6.5.0": {
+      "sha512": "EcHd1z2pEdnpaBMTI9qjVxk6mFVGVMZ1n0ySC3fjrkXCQQ8O9fMdt9TxPJRKyjiTiTjvO9700jKjmyl+hPBinQ==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.annotations/6.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net5.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net6.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/net7.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.dll",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.pdb",
+        "lib/netstandard2.0/Swashbuckle.AspNetCore.Annotations.xml",
+        "swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.annotations.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore.Swagger/6.5.0": {
       "sha512": "XWmCmqyFmoItXKFsQSwQbEAsjDKcxlNf1l+/Ki42hcb6LjKL8m5Db69OTvz5vLonMSRntYO1XLqz0OP+n3vKnA==",
       "type": "package",
@@ -786,8 +828,9 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
-      "Microsoft.Data.Sqlite >= 7.0.13",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Microsoft.Data.Sqlite >= 7.0.11",
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "Swashbuckle.AspNetCore.Annotations >= 6.5.0"
     ]
   },
   "packageFolders": {
@@ -835,9 +878,13 @@
           },
           "Microsoft.Data.Sqlite": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[7.0.11, )"
           },
           "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.5.0, )"
+          },
+          "Swashbuckle.AspNetCore.Annotations": {
             "target": "Package",
             "version": "[6.5.0, )"
           }
